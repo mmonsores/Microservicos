@@ -1,7 +1,7 @@
 1. Definição do Projeto
-Você pode criar uma aplicação de E-commerce simples, com uma arquitetura baseada em Microsserviços, e containerizada com Docker. A ideia é criar uma arquitetura de microsserviços escalável, onde cada serviço tem a responsabilidade de cuidar de uma parte específica da aplicação.
+E-commerce simples, com uma arquitetura baseada em Microsserviços, e containerizada com Docker. Arquitetura de microsserviços escalável, onde cada serviço tem a responsabilidade de cuidar de uma parte específica da aplicação.
 
-Serviços sugeridos para o projeto:
+Serviços para o projeto:
 Serviço de Usuários (User Service): Gerencia o cadastro, login e perfil de usuário.
 
 Serviço de Produtos (Product Service): Gerencia os produtos do catálogo.
@@ -78,7 +78,7 @@ plaintext
 Copiar
 Flask==2.0.1
 4. Configurando o Docker Compose
-O docker-compose.yml permitirá que você defina os múltiplos serviços e as conexões entre eles. Aqui está um exemplo básico de como configurar o Docker Compose:
+O docker-compose.yml permitirá que seja definido os múltiplos serviços e as conexões entre eles. Abaixo um exemplo básico de como configurar o Docker Compose:
 
 yaml
 Copiar
@@ -101,12 +101,12 @@ services:
     ports:
       - "5004:5000"
 5. Testando o Projeto Localmente
-Após criar todos os microsserviços e configurar o docker-compose.yml, você pode rodar todos os microsserviços localmente com o seguinte comando:
+Com os microserviços criados, o docker-compose.yml, será configurado para rodar todos os microsserviços localmente com o seguinte comando:
 
 bash
 Copiar
 docker-compose up --build
-Isso irá construir e subir os containers para os serviços. Agora, você pode acessar os serviços localmente:
+Isso irá construir e subir os containers para os serviços. Agora, pode acessar os serviços localmente:
 
 http://localhost:5001 para o User Service
 
@@ -117,7 +117,7 @@ http://localhost:5003 para o Order Service
 http://localhost:5004 para o Payment Service
 
 6. Configuração do GitHub
-Crie um repositório no GitHub chamado ecommerce-microservices.
+Crie um repositório no GitHub ecommerce-microservices.
 
 Inicialize um repositório Git na sua máquina local:
 
